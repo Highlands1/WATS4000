@@ -1,8 +1,16 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+//import variables prior to bootstrap.scss to properly
+//override variable in bootstrap
+@import "variables";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
+
+//Site-specific styles
+//Add additional stylesheets below
+//basic requiremet for week 2
+@import "content";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -15,8 +23,6 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 body {
   padding-top: 20px;
   padding-bottom: 20px;
-  /*stretch goal style*/
-  background-color: lightgrey;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */

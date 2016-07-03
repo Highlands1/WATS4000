@@ -1,0 +1,28 @@
+
+body {
+  color: green;
+}
+
+
+//try it out from building webapps by Shawn
+//section 3.5 experimenting w/ nesting
+//use proper hierarchy for week 2
+.marketing {
+    h4 {
+        a {
+            color: $brand-warning;
+        }
+    }
+    p {
+        color: $brand-primary;
+    }
+}
+
+//added from Building webapps by Shawn R
+//Making the most of mixins
+//Add this style to your _content.scss file:
+//add one mixin for week 2 assignment
+.container .jumbotron {
+    @include border-top-radius(0px);
+    @include border-bottom-radius(50px);
+}
