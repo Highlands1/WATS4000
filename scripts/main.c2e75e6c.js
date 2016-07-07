@@ -1,0 +1,1 @@
+"use strict";console.log("WATS4000 Web App"),window.confirm("Stretch Goal!");
